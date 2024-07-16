@@ -1,0 +1,27 @@
+{
+  "name": "testtiny",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tinymce/tinymce-vue": "^6.0.1",
+    "ant-design-vue": "^4.2.3",
+    "file-saver": "^2.0.5",
+    "html-docx-js-typescript": "^0.1.5",
+    "html-to-md": "^0.8.5",
+    "mammoth": "^1.8.0",
+    "marked": "^13.0.2",
+    "tinymce": "^7.2.1",
+    "tinymce-plugin": "^0.0.3-beta.22",
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.1"
+  }
+}
