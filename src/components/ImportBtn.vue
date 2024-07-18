@@ -1,12 +1,6 @@
 <template>
   <div style="padding: 8px">
     <Space>
-      <Upload v-bind="uploadProps">
-        <Button>导入markdown</Button>
-      </Upload>
-      <Upload v-bind="wordUploadProps">
-        <Button>导入word(仅docx)</Button>
-      </Upload>
       <Button @click="handleExportMD">导出markdown</Button>
       <Button @click="handleExportWord">导出word</Button>
     </Space>
