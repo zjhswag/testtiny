@@ -11,9 +11,11 @@
   "dependencies": {
     "@tinymce/tinymce-vue": "^6.0.1",
     "ant-design-vue": "^4.2.3",
+    "docx-preview": "^0.3.2",
     "file-saver": "^2.0.5",
     "html-docx-js-typescript": "^0.1.5",
     "html-to-md": "^0.8.5",
+    "jszip": "^3.10.1",
     "mammoth": "^1.8.0",
     "marked": "^13.0.2",
     "tinymce": "^7.2.1",

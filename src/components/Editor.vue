@@ -1,5 +1,5 @@
 <template>
-  <editor v-model="content" :init="init" />
+  <editor v-model="content" :init="init"  />
 </template>
 
 <script setup>
@@ -13,7 +13,7 @@ import 'tinymce/models/dom';
 import 'tinymce/plugins/advlist';
 import 'tinymce/plugins/anchor';
 import 'tinymce/plugins/autolink';
-import 'tinymce/plugins/autoresize';
+// import 'tinymce/plugins/autoresize';
 import 'tinymce/plugins/autosave';
 import 'tinymce/plugins/charmap';
 import 'tinymce/plugins/code';
@@ -68,12 +68,24 @@ const init = {
   //   tools: { title: 'Tools', items: 'spellchecker spellcheckerlanguage | a11ycheck code wordcount' },
   //   table: { title: 'Table', items: 'inserttable | cell row column | advtablesort | tableprops deletetable' }
   // },
+  // setup: function (editor) {
+  //   editor.on('init', function () {
+  //     var body = editor.getBody();
+  //     // 使用JavaScript设置body的宽度和高度
+  //     // 注意：这里的宽度和高度应该是A4尺寸转换为像素
+  //     body.style.width = '210mm'; // 或者使用像素值
+  //     body.style.height = '297mm'; // 或者使用像素值
+  //   });
+  // },
   removed_menuitems: 'code revisionhistory codeformat image link media addcomment pageembed codesample',
-  autoresize_bottom_margin: 50,
-  max_height: 2500,
-  min_height: 2000,
+  // autoresize_bottom_margin: 50,
+  max_height: 2000,
+  min_height: 1000,
+  width: 1000,
+  // max_width: 1100,
   // height: 3000,
   toolbar_mode: 'none',
+  // autoresize_overflow_padding: 10,
   //   upgrade
   promotion: false,
   plugins:
@@ -94,3 +106,13 @@ const init = {
   license_key: 'gpl',
 };
 </script>
+
+<!--<style>-->
+<!--.a4-editor {-->
+<!--  width: 595px;-->
+<!--  height: 842px;-->
+<!--  border: 1px solid #ccc;-->
+<!--  margin: 0 auto;-->
+<!--  overflow: hidden;-->
+<!--}-->
+<!--</style>-->

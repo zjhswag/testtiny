@@ -1,6 +1,8 @@
 <template>
-  <div id="app">
-    <ImportBtn @content-change="setContent" :content-html="content" />
+  <div id="app" class="editor-container">
+    <div class="toolbar">
+      <ImportBtn @content-change="setContent" :content-html="content" />
+    </div>
     <Editor v-model="content" />
   </div>
 </template>
@@ -16,3 +18,16 @@ function setContent(html) {
   content.value = html;
 }
 </script>
+
+<style>
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+}
+</style>
